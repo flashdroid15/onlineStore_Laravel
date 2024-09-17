@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
         'name' => 'laravel/laravel',
-        'pretty_version' => 'v9.5.2',
-        'version' => '9.5.2.0',
-        'reference' => null,
+        'pretty_version' => 'dev-main',
+        'version' => 'dev-main',
+        'reference' => '9f80014a4583fd12ea62281e466f18c782df2a59',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -383,9 +383,9 @@
             'dev_requirement' => false,
         ),
         'laravel/laravel' => array(
-            'pretty_version' => 'v9.5.2',
-            'version' => '9.5.2.0',
-            'reference' => null,
+            'pretty_version' => 'dev-main',
+            'version' => 'dev-main',
+            'reference' => '9f80014a4583fd12ea62281e466f18c782df2a59',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
@@ -751,8 +751,8 @@
         'psr/log-implementation' => array(
             'dev_requirement' => false,
             'provided' => array(
-                0 => '1.0|2.0|3.0',
-                1 => '1.0.0 || 2.0.0 || 3.0.0',
+                0 => '1.0.0 || 2.0.0 || 3.0.0',
+                1 => '1.0|2.0|3.0',
             ),
         ),
         'psr/simple-cache' => array(
@@ -989,6 +989,15 @@
             'reference' => 'b6d5c33cf0b8260d6540572af2d9bcf9182fe5fb',
             'type' => 'library',
             'install_path' => __DIR__ . '/../spatie/laravel-ignition',
+            'aliases' => array(),
+            'dev_requirement' => true,
+        ),
+        'squizlabs/php_codesniffer' => array(
+            'pretty_version' => '3.10.2',
+            'version' => '3.10.2.0',
+            'reference' => '86e5f5dd9a840c46810ebe5ff1885581c42a3017',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../squizlabs/php_codesniffer',
             'aliases' => array(),
             'dev_requirement' => true,
         ),
