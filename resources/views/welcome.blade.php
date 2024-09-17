@@ -1,4 +1,4 @@
-<!-- Replaces the Laravel default welcome screen with a welcome screen for the onlineStore -->
+<!-- Replaces the Laravel default welcome.blade.php.old screen with a welcome screen for the onlineStore -->
 
 @extends('layouts.app')
 
