@@ -8,10 +8,10 @@
 
 	<!-- Below is the Bootstrap's CSS -->
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous" />
-	
-    <!-- Below is the CSS defined in /public/css/app.css -->
+
+	<!-- Below is the CSS defined in /public/css/app.css -->
 	<link href="{{ asset('/css/app.css') }}" rel="stylesheet" />
-    <!-- Curly Braces invokes the asset function (Laravel helpers) -->
+	<!-- Curly Braces invokes the asset function (Laravel helpers) -->
 
 	<title>@yield('title', 'Online Store')</title>
 </head>
@@ -23,7 +23,7 @@
 
 		<div class="container">
 
-			<a class="navbar-brand" href="#">Online Store</a>
+			<a class="navbar-brand" href="{{ route('home.index') }}">Online Store</a>
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
 				aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
@@ -32,8 +32,8 @@
 			<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
 
 				<div class="navbar-nav ms-auto">
-					<a class="nav-link active" href="#">Home</a>
-					<a class="nav-link active" href="#">About</a>
+					<a class="nav-link active" href="{{ route('home.index') }}">Home</a>
+					<a class="nav-link active" href="{{ route('home.about') }}">About</a>
 				</div>
 
 			</div>

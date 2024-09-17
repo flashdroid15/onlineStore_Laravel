@@ -32,5 +32,12 @@ Route::get('/', function () {
     */
 });
 
+/*
+| Above is bad strategy
+| Below is good strategy
+*/
+
+Route::get('/', 'App\Http\Controllers\HomeController@index')->name("home.index");
+
 Route::get('/about', 'App\Http\Controllers\HomeController@about')->name("home.about");
 // name() method defines a custom route name
